@@ -3,19 +3,19 @@ using System.Collections.Generic;
 
 public class SimpleCharacterControl : MonoBehaviour {
 
-    private enum ControlMode
+    private enum ControlMode //use two types of character control
     {
         Tank,
         Direct
     }
 
-    [SerializeField] private float m_moveSpeed = 2;
+    [SerializeField] private float m_moveSpeed = 2;    //serialized variables fields
     [SerializeField] private float m_turnSpeed = 200;
     [SerializeField] private float m_jumpForce = 4;
-    [SerializeField] private Animator m_animator;
-    [SerializeField] private Rigidbody m_rigidBody;
+    [SerializeField] private Animator m_animator; //ref to animator
+    [SerializeField] private Rigidbody m_rigidBody;//ref to rigidbody
 
-    [SerializeField] private ControlMode m_controlMode = ControlMode.Direct;
+    [SerializeField] private ControlMode m_controlMode = ControlMode.Direct; //field to allow user to chnage control mode 
 
     private float m_currentV = 0;
     private float m_currentH = 0;

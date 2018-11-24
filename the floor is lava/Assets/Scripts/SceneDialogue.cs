@@ -21,7 +21,11 @@ public class SceneDialogue : MonoBehaviour {
     {
         if (LevelTracker.levelCount == 2)
         {
-            startText.text = "The lava burns hotter";
+            startText.text = "              The lava burns hotter";
+        }
+        if (LevelTracker.levelCount == 3)
+        {
+            startText.text = "          Make for your escape!";
         }
         if (Time.time > TmStart + TmLen)
         {

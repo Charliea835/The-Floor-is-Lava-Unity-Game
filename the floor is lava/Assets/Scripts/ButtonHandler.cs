@@ -16,4 +16,10 @@ public class ButtonHandler : MonoBehaviour {
     {
         Application.Quit();
     }
+
+    public void start()
+    {
+        SceneManager.LoadScene("Intro");
+        
+    }
 }

@@ -11,22 +11,24 @@ public class KillPlayer : MonoBehaviour {
     public GameObject deathObject;
     public Slider healthSlider;
     GameObject healthScript;
+    
 
     private void Start()
     {
         healthScript = GameObject.Find("HealthSlider");
-        health = 100;
+        health = 100; //ensure health is always at 100 at start of scene
     }
 
     private void Update()
     {
         if ((int)health == 0)
         {
-            health = 0;
+            health = 0;      
             healthText.text = "Health: " + health;
  
         
         }
+        
     }
     private void OnCollisionEnter(Collision collision)
         {
