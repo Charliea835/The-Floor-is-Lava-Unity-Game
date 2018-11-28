@@ -774,9 +774,8 @@ MonoBehaviour:
   distance: 5
   height: 10
   damping: 10
-  smoothRotation: 1
   followBehind: 1
-  rotationDamping: 20
+  rotationDamping: 10
 --- !u!1001 &551688857
 Prefab:
   m_ObjectHideFlags: 0
@@ -1004,11 +1003,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4947633593169448, guid: 96ff8d0fe6dc6ef459e56fc007600f4a, type: 2}
       propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 4947633593169448, guid: 96ff8d0fe6dc6ef459e56fc007600f4a, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 86.850006
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96ff8d0fe6dc6ef459e56fc007600f4a, type: 2}
@@ -2009,5 +2004,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
